@@ -11,13 +11,19 @@ int main(){
     for(i = 0; i < 30; i++)
     {
         cout << "Please enter student for index " << i << ":";
-        cin.getline (student_name[i], 100);
-
-    if (student_name[i] == "\0")
+        cin.getline (student_name[i], 100);    
+        
+    for (int i = 0; i < 30; i++)
+    {
+        if (student_name[i] == "\0")
         {
-            cout << student_name[i];
+            cout << "Students" << student_name[i];
         }
-    }        
+    }
+    }    
 
+
+        
+    return 0;
         
 }
